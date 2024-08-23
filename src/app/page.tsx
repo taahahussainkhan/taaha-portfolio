@@ -1,3 +1,4 @@
+"use client"
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
@@ -5,6 +6,11 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
+   const resume_url = "https://drive.google.com/file/d/1wySGLgTUP6RvSeIp3K16Rrk1TMNQ0VCN/view?usp=sharing"
+  const handleDownload = (e) => {
+   e.preventDefault()
+    window.open(resume_url, "_blank")
+  }
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -30,6 +36,8 @@ export default function Home() {
                 variant="outline"
                 size="lg"
                 className=" flex items-center gap-2"
+                onClick={handleDownload}
+                download = "Taaha Hussain Khan - Full Stack Developer.pdf"
               >
                 <span className="">download resume</span>
                 <FiDownload className="text-xl" />
