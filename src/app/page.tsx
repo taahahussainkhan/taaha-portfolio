@@ -19,17 +19,17 @@ export default function Home() {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl mb-7">software developer</span>
             <h1 className="h2">
-              hello, i am <br />{" "}
+              Hello, i am <br />{" "}
               <span className="h1 text-accent">taaha hussain khan</span>
             </h1>
             <p className="max-w-[500px] mb-9 mt-[7px] text-white/80">
-              i excel at crafting elegent digital experiences and i am proficient
+              I excel at crafting elegent digital experiences and i am proficient
               in various programming languages and technologies.
             </p>
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
             <a
-                href="" // Path to your resume file
+                href="" 
                 download
               />
               <Button
@@ -38,7 +38,7 @@ export default function Home() {
                 className=" flex items-center gap-2"
                 onClick={handleDownload}
               >
-                <span className="">download resume</span>
+                <span className="">DOWNLOAD RESUME</span>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
