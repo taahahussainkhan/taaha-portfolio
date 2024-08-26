@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function ContactForm() {
   const [state, handleSubmit] = useForm("xanwbzdo");
   if (state.succeeded) {
-    return <p className="text-2xl">Thanks for reaching out. I'll get back to you!</p>;
+    return <p className="text-2xl">Thanks for reaching out. I &apos;ll get back to you!</p>;
   }
   return (
     <div className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0">
