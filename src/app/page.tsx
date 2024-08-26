@@ -7,7 +7,7 @@ import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
    const resume_url = "https://drive.google.com/file/d/1wySGLgTUP6RvSeIp3K16Rrk1TMNQ0VCN/view?usp=sharing"
-  const handleDownload = (e) => {
+  const handleDownload = (e: React.MouseEvent<HTMLButtonElement>) => {
    e.preventDefault()
     window.open(resume_url, "_blank")
   }

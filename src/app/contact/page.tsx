@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function ContactForm() {
   const [state, handleSubmit] = useForm("xanwbzdo");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <p className="text-2xl">Thanks for reaching out. I'll get back to you!</p>;
   }
   return (
     <div className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0">
@@ -25,20 +25,20 @@ function ContactForm() {
           type="text"
           name="phone no"
           placeholder="Phone Number"
-          className="bg-[#27272c] text-white h-14"
+          className="bg-[#27272c] text-white h-14 text-center"
         />
         <input
           id="email"
           type="email"
           name="email"
-          className="flex items-center justify-center bg-[#27272c] text-white h-14"
+          className="flex items-center justify-center bg-[#27272c] text-white h-14 text-center"
           placeholder="Email"
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <textarea
           id="message"
           name="message"
-          className="bg-[#27272c] text-white h-[150px]"
+          className="bg-[#27272c] text-white h-[150px] text-center"
           placeholder="Message"
         />
         <ValidationError
