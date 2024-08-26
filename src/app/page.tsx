@@ -37,7 +37,6 @@ export default function Home() {
                 size="lg"
                 className=" flex items-center gap-2"
                 onClick={handleDownload}
-                download = "Taaha Hussain Khan - Full Stack Developer.pdf"
               >
                 <span className="">download resume</span>
                 <FiDownload className="text-xl" />
