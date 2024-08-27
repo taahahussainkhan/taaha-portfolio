@@ -4,6 +4,7 @@ import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
    const resume_url = "https://drive.google.com/file/d/1wySGLgTUP6RvSeIp3K16Rrk1TMNQ0VCN/view?usp=sharing"
@@ -18,12 +19,25 @@ export default function Home() {
           {/* Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl mb-7">software developer</span>
+            
             <h1 className="h2">
               Hello, i am <br />{" "}
-              <span className="h1 text-accent">taaha hussain khan</span>
+              <TypeAnimation 
+            sequence={[
+              'taaha hussain khan',
+              2000, 
+              'software engineer',
+            ]}
+            wrapper="span"
+            speed={60}
+            className="h1 text-accent"
+            // style={{ fontSize: '2em', display: 'inline-block' }}
+            repeat={Infinity}
+            />
+              {/* <span className="h1 text-accent">taaha hussain khan</span> */}
             </h1>
             <p className="max-w-[500px] mb-9 mt-[7px] text-white/80">
-              I excel at crafting elegent digital experiences and i am proficient
+              I excel at crafting elegant digital experiences and I am proficient
               in various programming languages and technologies.
             </p>
             {/* button and socials */}
