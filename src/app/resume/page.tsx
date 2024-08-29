@@ -191,8 +191,8 @@ const Resume = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
-        <Tabs defaultValue = "experience"
-        className="flex flex-col xl:flex-row gap-[60px]"
+        <Tabs defaultValue="experience"
+          className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experience" >Experience</TabsTrigger>
@@ -221,10 +221,28 @@ const Resume = () => {
               </div>
             </TabsContent>
             <TabsContent value="education" className="w-full">
-              education
+              <div className="bg-[#27272c] p-4 rounded-lg">
+                <h3 className="text-2xl font-bold">Bachelors in Computer Science</h3>
+                <h4 className="text-sm font-semibold text-accent">University of Central Punjab</h4>
+
+              </div>
             </TabsContent>
             <TabsContent value="skills" className="w-full">
-              skills
+              <div className="bg-[#27272c] p-4 rounded-lg">
+                <h1 className="text-2xl font-bold hover:text-accent-hover transition delay-150">{skills.title}</h1>
+                <p>{skills.description}</p>
+                <div className="grid grid-cols-4 gap-4">
+                  {skills.skillset.map((skill, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col items-center justify-center gap-2 p-4 border-2 border-[#27272c] rounded-lg"
+                    >
+                      {skill.icon}
+                      <p className="text-sm font-semibold">{skill.name}</p>
+                    </div>)
+                  )}
+                </div>
+              </div>
             </TabsContent>
             <TabsContent value="about" className="w-full">
               about
