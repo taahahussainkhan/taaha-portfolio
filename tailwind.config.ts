@@ -26,6 +26,9 @@ const config = {
       primary: "var(--font-jetbrainsMono)",
     },
     extend: {
+      spacing: {
+        '60': '60px', 
+      },
       colors: {
        primary: '#1c1c22',
        accent:{
