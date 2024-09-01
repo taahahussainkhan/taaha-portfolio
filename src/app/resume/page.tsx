@@ -1,30 +1,7 @@
 "use client";
 import React from "react";
 
-
-import {
-  SiTypescript,
-  SiRedux,
-  SiMongodb,
-  SiPostgresql,
-  SiGraphql,
-  SiDocker,
-  SiGit,
-  SiGithub,
-  SiHeroku,
-  SiNetlify,
-} from "react-icons/si";
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 import { motion } from "framer-motion";
 
@@ -170,10 +147,10 @@ const skills = {
     },
     {
       icon: (
-<div class="w-12 h-12 group">
+<div className="w-12 h-12 group">
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="w-full h-full fill-gray-500 group-hover:fill-current group-hover:text-[#5d4037] group-hover:text-[#4caf50] group-hover:text-[#dcedc8] group-hover:text-[#81c784]"
+        className="w-full h-full fill-gray-500 group-hover:fill-current group-hover:text-[#5d4037] group-hover:text-[#4caf50] group-hover:text-[#dcedc8] group-hover:text-[#81c784]"
         viewBox="0 0 48 48"
     >
         <path d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z"></path>
