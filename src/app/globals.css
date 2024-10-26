@@ -23,3 +23,24 @@
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #00ff99;
+    border-radius: 2px;
+}
+
+/* Handle on hover
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */

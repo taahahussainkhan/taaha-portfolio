@@ -7,21 +7,6 @@ import Education from "@/components/Resume/Education";
 import Experiences from "@/components/Resume/Experiences";
 import About from "@/components/Resume/About";
 
-
-const education = {
-  icon: "/assets/resume/cap.svg",
-  title: "My Education",
-  items: [
-    {
-      university: "Full Stack Developer",
-      major: "Freelance",
-      date: "2020 - Present",
-      // description: 'I have worked on a variety of projects including e-commerce websites, social media platforms, and personal blogs. I have experience with a variety of technologies including React, Redux, Node.js, Express, MongoDB, PostgreSQL, and GraphQL.'
-    },
-  ],
-};
-
-
 const Resume = () => {
   return (
     <motion.div
@@ -34,19 +19,20 @@ const Resume = () => {
           ease: "easeIn",
         },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-start justify-center py-12 xl:py-0"
     >
-      <div className="container mx-auto">
-        <Tabs defaultValue="experience"
-          className="flex flex-col xl:flex-row gap-[60px]"
+      <div className="container mx-auto flex">
+        <Tabs
+          defaultValue="experience"
+          className="flex flex-col xl:flex-row gap-[60px] w-full"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience" >Experience</TabsTrigger>
+            <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills" >Skills</TabsTrigger>
+            <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About</TabsTrigger>
           </TabsList>
-          <div className="min-h-[70vh] w-full">
+          <div className="min-h-[70vh] max-h-[75vh] w-full overflow-y-auto scrollbar-none">
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <Experiences />
@@ -63,7 +49,6 @@ const Resume = () => {
           </div>
         </Tabs>
       </div>
-
     </motion.div>
   );
 };
