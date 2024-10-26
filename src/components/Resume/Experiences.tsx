@@ -31,15 +31,17 @@ const Experiences = () => {
         <div className="flex flex-col gap-[30px] text-center xl:text-left">
             <h3 className="text-3xl font-extrabold">{experiences.title}</h3>
             <p>{experiences.description}</p>
-            <div className="grid grid-cols-2 ">
+            <div className="flex flex-col ">
                 {experiences.items.map((item, index) => (
                     <div
                         key={index}
-                        className=" gap-2 border-l-4 bg-[#27272c] pl-4 m-2 h-[180px] flex align-center"
+                        className="flex flex-col gap-2 border-l-4 bg-[#27272c] p-4 m-2 h-[180px]  align-center hover:shadow-2xl hover:border-accent-hover transition-all ease-in-out duration-300"
                     >
-                        <h4 className="text-xl font-bold">{item.title}</h4>
+                        <div className="flex justify-between">
+                            <h4 className="text-2xl font-bold hover:text-accent-hover transition-all ease-in-out duration-300">{item.title}</h4>
+                            <p className="text-sm text-white">{item.date}</p>
+                        </div>
                         <p className="text-sm text-white">{item.company}</p>
-                        <p className="text-sm text-white">{item.date}</p>
                     </div>
                 ))}
             </div>
