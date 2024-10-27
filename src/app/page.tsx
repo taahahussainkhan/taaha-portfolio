@@ -28,13 +28,13 @@ export default function Home() {
             sequence={[
               'taaha hussain khan',
               2000, 
-              'software engineer',
+              'taaha hussain khan',
             ]}
             wrapper="span"
             speed={60}
             className="h1 text-accent"
             // style={{ fontSize: '2em', display: 'inline-block' }}
-            repeat={Infinity}
+            repeat={1}
             />
               {/* <span className="h1 text-accent">taaha hussain khan</span> */}
             </h1>
